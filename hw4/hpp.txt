@@ -1,0 +1,104 @@
+//Clear
+template <typename T>
+void LinkedStack<T>::clear()
+{
+    Node<T> *temp = m_head;
+    while(m_head != NULL)
+    {
+      temp = m_head;
+      m_head = m_head->m_next;
+      delete temp;
+    }
+    m_size = 0;
+}
+
+//Checks if Empty
+template <typename T>
+bool LinkedStack<T>::isEmpty() const
+{
+  return m_size == 0;
+}
+
+// Equal Operator
+template <typename T>
+const LinkedStack<T>& LinkedStack<T>::operator = (const LinkedStack<T>& rhs)
+{
+  if(this != &rhs)
+  {
+    LinkedStack<T>* p = this;
+    int m_size = rhs.m_size();
+    clear();
+
+    const LinkedStack<T>* ptr = &rhs;
+
+    for(int i = 0; i < m_size; i++)
+    {
+      p->m_data = ptr->m_data;
+      ptr = ptr->m_next;
+      p->m_next = new LinkedStack<T>;
+      p = p->m_next;
+    }
+  }
+
+  return *this;
+}
+
+// Deconstructor
+template <typename T>
+LinkedStack<T>::~LinkedStack()
+{
+  clear();
+}
+//Constructor
+template <typename T>
+LinkedStack<T>::LinkedStack()
+{
+  m_head = NULL;
+  m_size = 0;
+}
+
+//Copy
+template <typename T>
+LinkedStack<T>::LinkedStack(const LinkedStack<T>& rhs)
+{
+  Node<T> *current = rhs.m_head->m_next;
+  Node<T> *next = new Node<T>(0, NULL);
+  while(current != NULL)
+  {
+    next->m_next=new Node<T>(current->m_data, NULL);
+    current = current->m_next;
+    next = next->m_next;
+  }
+}
+
+//Oops
+template <typename T>
+const T& LinkedStack<T>::top() const throw (Oops)
+{
+  if(m_size == 0)
+  {
+    throw new Oops("You can't see the top of an empty Stack!");
+  }
+}
+
+//Pop
+template <typename T>
+void LinkedStack<T>::pop()
+{
+  if (m_size != NULL)
+  {
+    T it = m_head->m_data;
+    Node<T> *temp = m_head->m_next;
+    delete m_head;
+    m_head = temp;
+    m_size--;
+  }
+}
+
+//Push
+template <typename T>
+void LinkedStack<T>::push(const T& x)
+{
+  m_head = new Node<T>(x, m_head);
+  m_size++;
+}

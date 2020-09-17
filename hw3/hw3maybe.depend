@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1508186276 source:c:\users\hoj31\documents\datastructures\hw3maybe\main.cpp
+	<iostream>
+	"arraylist.h"
+
+1508179013 c:\users\hoj31\documents\datastructures\hw3maybe\arraylist.h
+	<iostream>
+	"arraylist.hpp"
+
+1508193190 c:\users\hoj31\documents\datastructures\hw3maybe\arraylist.hpp
+
+1508186278 source:d:\hw3maybe\main.cpp
+	<iostream>
+	"arraylist.h"
+
+1508179014 d:\hw3maybe\arraylist.h
+	<iostream>
+	"arraylist.hpp"
+
+1508194594 d:\hw3maybe\arraylist.hpp
+

@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1509509820 source:c:\users\jeremy ho\documents\program\hw5\treetester.cpp
+	<iostream>
+	"mybstree.h"
+
+1509926932 c:\users\jeremy ho\documents\program\hw5\mybstree.h
+	<iostream>
+	<string>
+	"abstractbstree.h"
+	"mybstree.hpp"
+
+1509509820 c:\users\jeremy ho\documents\program\hw5\abstractbstree.h
+	<iostream>
+	<string>
+
+1509926944 c:\users\jeremy ho\documents\program\hw5\mybstree.hpp
+	<iostream>
+
+1509509820 source:d:\cs 1575 data structure\hw5\treetester.cpp
+	<iostream>
+	"mybstree.h"
+
+1510161344 d:\cs 1575 data structure\hw5\mybstree.h
+	<iostream>
+	<string>
+	"abstractbstree.h"
+	"mybstree.hpp"
+
+1509509820 d:\cs 1575 data structure\hw5\abstractbstree.h
+	<iostream>
+	<string>
+
+1510161254 d:\cs 1575 data structure\hw5\mybstree.hpp
+	<iostream>
+

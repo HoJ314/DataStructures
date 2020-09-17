@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1510244496 source:d:\cs 1575 data structure\hw6\hw6\maptester.cpp
+	<iostream>
+	<string>
+	"mystringmap.h"
+
+1510880386 d:\cs 1575 data structure\hw6\hw6\mystringmap.h
+	"abstractstringmap.h"
+	"KVpair.h"
+	<string>
+	<iostream>
+	"mystringmap.hpp"
+
+1510879606 d:\cs 1575 data structure\hw6\hw6\abstractstringmap.h
+	<iostream>
+	<string>
+
+1510679866 d:\cs 1575 data structure\hw6\hw6\linkedlist.h
+	<iostream>
+	"linkedlist.hpp"
+
+1510679866 d:\cs 1575 data structure\hw6\hw6\linkedlist.hpp
+
+1510880580 d:\cs 1575 data structure\hw6\hw6\mystringmap.hpp
+	"mystringmap.h"
+
+1510880492 d:\cs 1575 data structure\hw6\hw6\kvpair.h
+
